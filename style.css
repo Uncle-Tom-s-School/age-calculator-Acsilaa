@@ -13,7 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .cont{
-    width: min(90vw, 40em);
+    width: min(40em, 90vw);
     background-color: white;
     height: max-content;
     padding: 2em;
@@ -96,7 +96,7 @@ button div:nth-child(2),button div:nth-child(1){
     border: 1px solid transparent;
 }
 button div:nth-child(1){
-    left: .27em;
+    left: .3em;
     border-top: 1px solid white;
     border-right: 1px solid white;
     rotate: 40deg;
@@ -117,3 +117,19 @@ button div:nth-child(3)::after{
     bottom: -7px;
 }
 
+.errorp{
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+    width: 3em;
+    display: none;
+}
+.input.error .errorp{
+    display: block;
+}
+.input.error input{
+    border-color: red;
+}
+.input.error label{
+    color: red;
+}

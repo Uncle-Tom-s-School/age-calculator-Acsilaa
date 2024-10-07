@@ -28,20 +28,23 @@
 <body>
   <div class="cont">
     <div class="inputs">
-      <div>
+      <div class="input" id="day">
         <label for="">Day</label>
-        <input type="text" placeholder="DD">
+        <input type="number" placeholder="DD" maxlength="2">
+        <p class="errorp">ERR</p>
       </div>
 
-      <div>
+      <div class="input" id="month">
         <label for="">Month</label>
-        <input type="text" placeholder="MM">
+        <input type="number" placeholder="MM" maxlength="2">
+        <p class="errorp">Err</p>
       </div>
-      <div>
+      <div class="input" id="year">
         <label for="">Year</label>
-        <input type="text" placeholder="YYYY">
+        <input type="number" placeholder="YYYY" maxlength="4">
+        <p class="errorp">err</p>
       </div>
-      <button><div></div><div></div><div></div></button>
+      <button id="subm"><div></div><div></div><div></div></button>
     </div>
     
     <hr>

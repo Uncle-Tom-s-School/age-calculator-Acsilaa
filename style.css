@@ -1,0 +1,119 @@
+@import url('./assets/fonts/Poppins-Regular.ttf');
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.cont{
+    width: min(90vw, 40em);
+    background-color: white;
+    height: max-content;
+    padding: 2em;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+input{
+    width: 3em;
+    color: black;
+    font-weight: 700;
+    padding: .4em;
+    font-size: 32px;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid gray;
+}
+input:active{
+    border-color: hsl(259, 100%, 65%);
+}
+.inputs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+} 
+.inputs > div{
+    margin: .5em .6em;
+    
+}
+p{
+    font-size: 5em;
+    margin: 0;
+    font-weight: 600;
+}
+span{
+    color: hsl(259, 100%, 65%);
+}
+button{
+    background-color: hsl(259, 100%, 65%);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    right: 0;
+    bottom: -45% ;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+}
+button:hover,
+button:hover div:nth-child(3)::after{
+    background-color: hsl(0, 1%, 44%);
+}
+button div{
+    background-color: white;
+    width: 1px;
+}
+label{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 10px;
+    color: gray;
+}
+button div:nth-child(3){
+    height: 3em;
+}
+button div:nth-child(2),button div:nth-child(1){
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: .0em;
+    right: .3em;
+    border: 1px solid transparent;
+}
+button div:nth-child(1){
+    left: .27em;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    rotate: 40deg;
+}
+button div:nth-child(2){
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    rotate: -40deg;
+}
+
+button div:nth-child(3)::after{
+    content: "";
+    width: 25px;
+    aspect-ratio: 1;
+    background: hsl(259, 100%, 65%);
+    position: absolute;
+    left: 30%;
+    bottom: -7px;
+}
+
